@@ -1,0 +1,83 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+.nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav a:hover { text-decoration: underline; }
+
+.section {
+    padding: 100px 20px;
+    min-height: 400px;
+    text-align: center;
+}
+#section1 { background: #e3f2fd; }
+#section2 { background: #f3e5f5; }
+#section3 { background: #e8f5e8; }
+
+.tabs-container { margin: 150px auto; max-width: 800px; padding: 20px; }
+.tabs { margin-bottom: 20px; }
+.tab-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+.tab-btn.active { background: #333; color: #fff; }
+.tab-content { display: none; padding: 20px; background: #fff; border: 1px solid #ddd; }
+.tab-content.active { display: block; }
+
+.quote-container {
+    margin: 100px auto;
+    max-width: 600px;
+    text-align: center;
+}
+#loadQuote {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+blockquote {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff;
+    border-left: 5px solid #333;
+}
+cite { display: block; margin-top: 15px; font-style: italic; }
+
+.ui-demo {
+    margin: 100px auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+.draggable-box {
+    width: 150px;
+    height: 150px;
+    background: #ff9800;
+    color: white;
+    line-height: 150px;
+    text-align: center;
+    display: inline-block;
+    cursor: move;
+    user-select: none;
+}

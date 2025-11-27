@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7 — jQuery vs Vanilla JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI 1.13.2 + стандартная тема -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+
+
+<nav class="nav">
+    <a href="#section1">Секция 1</a>
+    <a href="#section2">Секция 2</a>
+    <a href="#section3">Секция 3</a>
+</nav>
+
+
+<section id="section1" class="section"><h2>Секция 1</h2><p>Контент первой секции...</p></section>
+<section id="section2" class="section"><h2>Секция 2</h2><p>Контент второй секции...</p></section>
+<section id="section3" class="section"><h2>Секция 3</h2><p>Контент третьей секции...</p></section>
+
+
+<div class="tabs-container">
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">О нас</button>
+        <button class="tab-btn" data-tab="tab2">Отзывы</button>
+        <button class="tab-btn" data-tab="tab3">Контакты</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+        <h3>О нас</h3>
+        <p>Содержимое "О нас".</p>
+    </div>
+    <div id="tab2" class="tab-content">
+        <h3>Отзывы</h3>
+        <p>Содержимое "Отзывы".</p>
+    </div>
+    <div id="tab3" class="tab-content">
+        <h3>Контакты</h3>
+        <p>Содержимое "Контакты".</p>
+    </div>
+</div>
+
+
+<div class="quote-container">
+    <button id="loadQuote">Загрузить цитату</button>
+    <blockquote id="quote">
+        <p>Нажмите кнопку, чтобы загрузить случайную цитату...</p>
+        <cite></cite>
+    </blockquote>
+</div>
+
+
+<div class="ui-demo">
+    <h3>jQuery UI примеры</h3>
+
+    <div id="draggable" class="draggable-box">Перетащи меня</div>
+
+    <p>Выберите дату: <input type="text" id="datepicker"></p>
+</div>
+
+<!-- Подключаем наш скрипт в конце body -->
+<script src="script.js"></script>
+</body>
+</html>
